@@ -4,37 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kodtag — Coming Soon</title>
-  <meta name="description" content="Kodtag — exploring AI & knowledge" />
+  <meta name="description" content="Kodtag — exploring AI &amp; knowledge" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
 
- <!-- Canonical -->
-<link rel="canonical" href="https://kodtag.com/" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://kodtag.com/" />
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kodtag.com/">
-<meta property="og:title" content="Kodtag — Coming Soon">
-<meta property="og:description" content="Compact, fast, and scalable. Coming soon.">
-<meta property="og:image" content="https://kodtag.com/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:site_name" content="Kodtag">
-<meta property="og:locale" content="en_US">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kodtag.com/">
+  <meta property="og:title" content="Kodtag — Coming Soon">
+  <meta property="og:description" content="Compact, fast, and scalable. Coming soon.">
+  <meta property="og:image" content="https://kodtag.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kodtag">
+  <meta property="og:locale" content="en_US">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kodtag — Coming Soon">
-<meta name="twitter:description" content="Compact, fast, and scalable. Coming soon.">
-<meta name="twitter:image" content="https://kodtag.com/og-image.jpg">
-<!-- <meta name="twitter:site" content="@kodtag"> (istersen ekle) -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kodtag — Coming Soon">
+  <meta name="twitter:description" content="Compact, fast, and scalable. Coming soon.">
+  <meta name="twitter:image" content="https://kodtag.com/assets/images/og-image.jpg">
+  <!-- <meta name="twitter:site" content="@kodtag"> (add) -->
 
-<!-- Favicons / PWA -->
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#ffffff">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dda544">
+  <!-- Favicons / PWA -->
+  <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#dda544">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
     "@type":"Organization",
     "name":"Kodtag",
     "url":"https://kodtag.com/",
-    "logo":"https://kodtag.com/icon.svg"
+    "logo":"https://kodtag.com/assets/images/icon.svg"
   }
   </script>
   <script type="application/ld+json">
@@ -104,8 +104,8 @@
 <body>
   <main class="wrap">
     <div class="stage" aria-label="Kodtag logo loading animation">
-      <img id="cur" alt="kodtag frame current">
-      <img id="nxt" alt="kodtag frame next">
+      <img id="cur" src="/assets/images/loading1d.png" alt="kodtag frame current">
+      <img id="nxt" src="/assets/images/loading2d.png" alt="kodtag frame next">
     </div>
     <h1>🚀 Coming Soon...</h1>
     <div class="foot">© 2025 Kodtag™</div>
@@ -114,8 +114,10 @@
   <script>
     (function(){
       const frames = [
-        'loading1d.png','loading2d.png','loading3d.png','loading4d.png','loading5d.png',
-        'loading6d.png','loading7d.png','loading8d.png','loading9d.png','loading10d.png'
+        '/assets/images/loading1d.png','/assets/images/loading2d.png','/assets/images/loading3d.png',
+        '/assets/images/loading4d.png','/assets/images/loading5d.png','/assets/images/loading6d.png',
+        '/assets/images/loading7d.png','/assets/images/loading8d.png','/assets/images/loading9d.png',
+        '/assets/images/loading10d.png'
       ];
 
       function preload(src){
