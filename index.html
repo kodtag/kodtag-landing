@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="Kodtag — Coming Soon">
   <meta name="twitter:description" content="Compact, fast, and scalable. Coming soon.">
   <meta name="twitter:image" content="https://kodtag.com/assets/images/og-image.jpg">
-  <!-- <meta name="twitter:site" content="@kodtag"> (add) -->
+  <meta name="twitter:site" content="@kodtag">
 
   <!-- Favicons / PWA -->
   <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
@@ -61,22 +61,25 @@
   </script>
 
   <style>
-    :root{
-      --size: clamp(160px, 28vw, 280px); 
-      --frame-ms: 260;                   
-      --fade-ms: 120;                    
-    }
+  :root{
+      --size: clamp(200px, 30vw, 320px);   
+      --frame-ms: 260;
+      --fade-ms: 120;
+}
     html,body{
       height:100%; margin:0; background:#fff; color:#000;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial;
       -webkit-text-size-adjust:100%;
     }
-    .wrap{ 
-      min-height:100svh; 
-      display:grid; place-items:center; text-align:center; 
-      gap:16px; padding:24px;
-      padding-bottom: calc(24px + env(safe-area-inset-bottom));
+  .wrap{
+      min-height:100svh;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      text-align:center; gap:24px;
+      padding:24px;
+      max-width:var(--maxw); margin:0 auto;
     }
+
 
     .stage{ 
       position:relative; width:var(--size); height:var(--size); 
@@ -88,27 +91,37 @@
     }
     #cur{ opacity:1; transition:opacity var(--fade-ms) linear; }
     #nxt{ opacity:0; }
-
-    h1{
-      margin:20px 0 0;
-      font-weight:700; letter-spacing:.3px;
-      font-size:clamp(20px, 4vw, 28px);
-    }
+h1{
+  margin:14px 0 0;              
+  font-weight:800;              
+  letter-spacing:.3px;         
+  font-size:clamp(20px, 3.5vw, 36px);  
+}
     .foot{
       position:fixed; left:0; right:0; 
       bottom: max(12px, env(safe-area-inset-bottom));
       text-align:center; font-size:12px; color:#666; opacity:.6;
-    }
+      }
+
+  @media (min-width: 1024px){
+  :root{ --size: 300px; }            
+  h1{ font-size: 32px; }             
+}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="stage" aria-label="Kodtag logo loading animation">
-      <img id="cur" src="/assets/images/loading1d.png" alt="kodtag frame current">
-      <img id="nxt" src="/assets/images/loading2d.png" alt="kodtag frame next">
-    </div>
-    <h1>🚀 Coming Soon...</h1>
-    <div class="foot">© 2025 Kodtag™</div>
+ <main class="wrap">
+  <div class="stage brand" aria-label="Kodtag logo loading animation">
+    <img id="cur" src="/assets/images/loading1d.png" alt="Kodtag frame current">
+    <img id="nxt" src="/assets/images/loading2d.png" alt="Kodtag frame next">
+  </div>
+
+  <h1>🚀 Coming Soon...</h1>
+</main>
+
+<div class="foot">© 2025 Kodtag™</div>
+
+<div class="foot">© 2025 Kodtag™</div>
   </main>
 
   <script>
